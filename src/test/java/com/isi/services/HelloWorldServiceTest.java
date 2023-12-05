@@ -25,9 +25,8 @@ class HelloWorldServiceTest {
     void somme() {
         int a =5;
         int b = 10;
-        int result = helloWorldService.somme(a, b);
-        Assertions.assertNotNull(result);
-        Assertions.assertEquals(15, result);
+        int result1 = helloWorldService.somme(a, b);
+        Assertions.assertEquals(15, result1);
     }
 
     @Test
@@ -35,7 +34,6 @@ class HelloWorldServiceTest {
         int a =5;
         int b = 10;
         int result = helloWorldService.produit(a, b);
-        Assertions.assertNotNull(result);
         Assertions.assertEquals(50, result);
     }
 
@@ -44,7 +42,6 @@ class HelloWorldServiceTest {
         int a =25;
         int b = 5;
         int result = helloWorldService.soustraction(a, b);
-        Assertions.assertNotNull(result);
         Assertions.assertEquals(20, result);
     }
 }
